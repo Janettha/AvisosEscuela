@@ -9,8 +9,12 @@ import java.util.Date;
 
 public class Estudiantes {
     List<Estudiante> estudiantes = new ArrayList<Estudiante>();
+    String tab;
 
-    public Estudiantes(){
+    public Estudiantes(){}
+
+    public Estudiantes(String tab){
+        this.tab = tab;
         fill();
     }
 
@@ -21,8 +25,8 @@ public class Estudiantes {
     private void fill(){
         Estudiante e = new Estudiante();
         for(int i = 0; i<10; i++) {
-            e.setNombre(i + " Nombre");
-            e.setApellidos(i + " Apellidos");
+            e.setNombre(tab+" Nombre"+i);
+            e.setApellidos(tab+" Apellidos"+i);
             e.setCalificacion(i+ (int) (Math.random() * 10));
             e.setAsistencia(getAsistencia());
         }

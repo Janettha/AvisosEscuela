@@ -4,12 +4,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.tecnoanca.anca.avisosescuela.Dao.Estudiantes;
 import com.tecnoanca.anca.avisosescuela.Fragments.fragmentAsistencias;
 import com.tecnoanca.anca.avisosescuela.Fragments.fragmentCalificaciones;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-    public ViewPagerAdapter(FragmentManager fm) {
+    public ViewPagerAdapter(FragmentManager fm, Estudiantes e1, Estudiantes e2) {
         super(fm);
     }
 

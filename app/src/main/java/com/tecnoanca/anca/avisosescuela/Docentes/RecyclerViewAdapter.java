@@ -1,7 +1,9 @@
 package com.tecnoanca.anca.avisosescuela.Docentes;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,12 +33,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         View viewAsist = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.alumno_asistencia, parent, false);
         switch (viewType) {
-            case 0:
+            case 0: {
+                Log.e("RecyclerViewAdapter", "RVCalificaciones");
                 return new RecyclerViewCalificaciones(viewCalif, viewType);
-            case 1:
+            }
+            case 1: {
+                Log.e("RecyclerViewAdapter","RVAsistencias");
                 return new RecyclerViewAsistencias(viewAsist, viewType);
-            default:
+            }
+            default: {
+                Log.e("ReciclerViewAdapter", String.valueOf(viewType));
                 return null;
+            }
         }
     }
 
