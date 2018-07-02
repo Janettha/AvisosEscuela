@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AvisosEscuela</string>
+    <string name="title_activity_docentes">Docentes</string>
+    <string name="tab_text_1">Asistencias</string>
+    <string name="tab_text_2">Calificaciones</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!--FCM-->
+    <string name="FCM_PREF">com.tecnoanca.anca.avisosescuela.fcm_pref</string>
+    <string name="FCM_TOKEN">com.tecnoanca.anca.avisosescuela.fcm_token</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <!--RecyclerView-->
+    <string-array name="tab_A">
+        <item>Item 1A</item>
+        <item>Item 1B</item>
+    </string-array>
+
+    <string-array name="tab_B">
+        <item>Item 2A</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

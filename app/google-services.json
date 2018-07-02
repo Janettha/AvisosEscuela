@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "4593534778",
+    "firebase_url": "https://avisosescuela-7f695.firebaseio.com",
+    "project_id": "avisosescuela-7f695",
+    "storage_bucket": "avisosescuela-7f695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4593534778:android:2f52d743ee33876b",
+        "android_client_info": {
+          "package_name": "com.tecnoanca.anca.avisosescuela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4593534778-of42ribuv203ac6sf7d6pc7bpkjg1c2q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tecnoanca.anca.avisosescuela",
+            "certificate_hash": "c45089454306e2db025b2ea582e85facb72510fa"
+          }
+        },
+        {
+          "client_id": "4593534778-tk5r48vl7d7b9oet7g6o69g46qvbqnv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5OH-VJ3-JYVRmcjwtUB851PGfwkbKH-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4593534778-tk5r48vl7d7b9oet7g6o69g46qvbqnv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
