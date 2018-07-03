@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:gravity="center_vertical"
+        android:textAppearance="?attr/textAppearanceListItem"
         android:text="10"
         />
 
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:gravity="center_vertical"
+        android:textAppearance="?attr/textAppearanceListItem"
         android:text="Nombre completo del alumno"
         />
 

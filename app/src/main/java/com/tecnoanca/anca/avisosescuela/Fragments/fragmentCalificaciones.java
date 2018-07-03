@@ -36,7 +36,7 @@ public class fragmentCalificaciones extends Fragment {
         //String[] items = getResources().getStringArray(R.array.tab_B);
         Estudiantes e = new Estudiantes();
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(e);
-        recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+        //recyclerView = (RecyclerView) view.findViewById(R.id);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);

@@ -1,6 +1,9 @@
 package com.tecnoanca.anca.avisosescuela.Dto;
 
-public class Estudiante {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Estudiante implements Parcelable {
 
     private String nombre;
     private String apellidos;
@@ -58,4 +61,39 @@ public class Estudiante {
     public boolean isAsistencia() {
         return asistencia;
     }
+
+    protected Estudiante(Parcel in) {
+        nombre = in.readString();
+        apellidos = in.readString();
+        numeroLista = in.readString();
+        asistencia = in.readInt()==1;
+        calificacion = in.readInt();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(nombre);
+        dest.writeString(apellidos);
+        dest.writeString(numeroLista);
+        dest.writeInt(isAsistencia() ? 1 : 0);
+        dest.writeInt(calificacion);
+    }
+
+    public static final Creator<Estudiante> CREATOR = new Creator<Estudiante>() {
+        @Override
+        public Estudiante createFromParcel(Parcel in) {
+            return new Estudiante(in);
+        }
+
+        @Override
+        public Estudiante[] newArray(int size) {
+            return new Estudiante[size];
+        }
+    };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
 }

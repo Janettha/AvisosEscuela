@@ -8,6 +8,7 @@ import android.widget.Button;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.tecnoanca.anca.avisosescuela.Docentes.DocentesVO;
+import com.tecnoanca.anca.avisosescuela.Listas.MainActDocentes;
 
 import java.sql.SQLOutput;
 
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
        button.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent intent = new Intent(MainActivity.this, DocentesVO.class);
+               Intent intent = new Intent(MainActivity.this, MainActDocentes.class);
                startActivity(intent);
            }
        });

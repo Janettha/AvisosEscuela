@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.v7.widget.RecyclerView
-    android:id="@+id/recycler_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dummyModels"
+    android:name="com.gustavopeiretti.tabexample.ItemFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" />
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context="com.tecnoanca.anca.avisosescuela.Listas.AsistenciasFragment"
+    tools:listitem="@layout/alumno_asistencia" />

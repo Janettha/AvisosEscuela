@@ -68,8 +68,9 @@
 
         <activity
             android:name=".Fragments.Docentes"
-            android:label="@string/title_activity_docentes"></activity>
-        <activity android:name=".Docentes.DocentesVO"></activity>
+            android:label="@string/title_activity_docentes" />
+        <activity android:name=".Docentes.DocentesVO" />
+        <activity android:name=".Listas.MainActDocentes"></activity>
     </application>
 
 </manifest>
